@@ -1,8 +1,8 @@
 terraform {
   backend "s3" {
-    bucket = "jenkins-state-1988"
+    bucket = "test-lab-s3-bucket-ts"
     key    = "codepipeline-lambda"
-    region = "us-east-2"
+    region = "us-east-1"
   }
   required_version = ">= 0.15"
   required_providers {
